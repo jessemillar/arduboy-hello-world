@@ -1,4 +1,7 @@
 #include <Arduboy.h>
+
+#include "images.h"
+
 Arduboy arduboy;
 
 void setup() {
@@ -19,6 +22,8 @@ void loop() {
 	} else {
 		arduboy.print("Hello, World!");
 	}
+
+	arduboy.drawBitmap(10, 30, player, 16, 16, WHITE);
 
 	arduboy.display();
 }
